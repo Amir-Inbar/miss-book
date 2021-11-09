@@ -1,0 +1,287 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.main-layout {
+	margin-inline-end: 100px;
+	margin-inline-start: 100px;
+}
+
+/* Nav */
+
+.navbar-container a {
+	text-decoration: none;
+	color: darkcyan;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.logo {
+	margin-inline-start: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: darkorange;
+}
+
+.navbar-container a:hover {
+	color: darkgoldenrod;
+}
+
+.app-nav {
+	background-color: #5454;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.5rem;
+}
+
+/*Home Page */
+
+.home-page {
+	justify-content: center;
+	margin-block-start: 20px;
+	background-color: whitesmoke;
+}
+
+/* book App */
+.book-app {
+	position: relative;
+	background-color: whitesmoke;
+}
+
+/*Filter */
+
+.book-filter {
+	padding: 10px;
+	background-color: darkgray;
+	text-align: center;
+	font-size: 1.5rem;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.book-filter input {
+	border-radius: 20px;
+	font-size: 1.5rem;
+	text-align: center;
+}
+.filter-btn {
+	border-radius: 10px;
+	background-color: rgb(193, 216, 139);
+	font-size: 1.5rem;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: darkgreen;
+	border: 1px solid black;
+	padding: 5px;
+	transition: .6s;
+}
+
+.filter-btn:hover {
+	transform: scale(110%);
+}
+
+/* Book List */
+.book-list {
+	margin: 0;
+	padding: 20px;
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-auto-rows: 250px;
+	gap: 20px;
+	justify-content: center;
+	text-align: center;
+}
+
+/* Preview */
+
+.book-preview {
+	gap: 10px;
+	flex-wrap: wrap;
+	transition: .6s;
+}
+
+.book-preview:hover {
+	transform: scale(110%);
+}
+
+.book-preview span {
+	font-weight: bold;
+}
+.book-preview img {
+	max-height: 200px;
+	border-radius: 5px;
+}
+
+/* Details */
+
+.details-section {
+	flex-grow: 1;
+}
+
+.details-section > *:not(first-child) {
+	margin-block-start: 5px;
+}
+
+details-section > img {
+	max-height: 200px;
+}
+
+details-section span {
+	font: italic;
+	font-weight: bold;
+}
+
+.book-details img {
+	border-radius: 15px;
+}
+.book-details {
+	padding: 45px;
+	background-color: rgba(228, 220, 220, 0.973);
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	letter-spacing: 0.8px;
+}
+
+.book-desc-container {
+	height: 150px;
+	margin-inline-end: 20px;
+	font-size: 1rem;
+}
+
+.book-desc {
+	font-size: 1.2rem;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	letter-spacing: 0.8px;
+}
+
+.book-desc span {
+	font-weight: bold;
+}
+
+.desc-btn {
+	background: none;
+	border: none;
+	font-size: 1.1rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+/*Review */
+
+.review-add {
+	background-color: #5454;
+	font-size: 2rem;
+	justify-content: center;
+}
+
+.review-form {
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.add-review {
+	border-radius: 10px;
+	background-color: rgb(193, 216, 139);
+	font-size: 1.5rem;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: darkgreen;
+	border: 1px solid black;
+	padding: 5px;
+	transition: .6s;
+	text-decoration: none;
+}
+
+.display-review > * {
+	margin-block-start: 10px;
+}
+
+.display-review span {
+	font-weight: bold;
+}
+
+.remove-review-btn {
+	right: 10px;
+	top: 10px;
+	font-size: 2rem;
+	position: absolute;
+	cursor: pointer;
+}
+
+.checked {
+	color: goldenrod;
+}
+
+.stars-container {
+	align-items: center;
+	justify-content: space-between;
+}
+
+.stars-container img {
+	height: 50px;
+}
+
+.form-textarea {
+	height: 100px;
+	width: 250px;
+}
+
+.display-review {
+	background-color: rgba(201, 191, 191, 0.973);
+	font-size: 1.5rem;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	position: relative;
+	padding: 25px;
+}
+
+.display-review:nth-child(even) {
+	background-color: rgba(233, 217, 217, 0.973);
+}
+
+.isgreen {
+	color: green;
+}
+.isred {
+	color: red;
+}
+
+/*User Msg */
+
+.user-msg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(109, 216, 163, 0.75);
+	font-size: 2.5rem;
+	padding: 100px;
+	border: 20px solid lightgreen;
+	z-index: 5;
+}
+
+.user-msg-close {
+	right: 10px;
+	top: 10px;
+	position: absolute;
+	cursor: pointer;
+}
+/* HELPERS */
+
+.flex {
+	display: flex;
+}
+
+.space-between {
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+	margin-block-end: 20px;
+	align-items: center;
+}
